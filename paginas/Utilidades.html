@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Porfolio </title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.main.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+            <header class="col-md-12 col-xs-12 ">
+
+                <img class="headerFoto" src="../imagenes/16.png">
+                <div class="TituloHeader">
+                    <a href="../index.html"><img src="../imagenes/logo.png"></a>
+                </div>
+            </header>
+
+
+                <div class="contenedorMenu">
+
+                    <nav class="navbar navbar-default" role="navigation">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Desplegar navegación</span>
+                                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="menu nav navbar-nav navbar-right ">
+                                <li><a href="../index.html" title="Inicio"> Inicio</a></li>
+                                <li><a href="../paginas/Utilidades.html" title="Sobre Mí">Utilidades</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+<div class="contenedorBody">
+
+    <div class="row">
+
+                    <div class="col-md-4 submenuVertical">
+                        <div class="vertical-menu">
+                            <a href="#icm" class="active">Calculadora de ICM</a>
+                            <a href="#fcm">Calculadora de FCM</a>
+                            <a href="#categoria">Calculadora de Categoría</a>
+                            <a href="#horario">Horario de la Asociación</a>
+                        </div>
+                    </div>
+
+        <div id="marcoCentrado">
+        <div class="col-md-8 col-xs-12">
+            <br><br>
+                                <div class="tituloPaginas" id="icm">Calculadora de ICM.</div><br><br>
+                <div class="container">
+                    <div class="content">
+                        <label> <span>Peso:</span>
+                            <input type="number" placeholder="Ingrese su peso en kilogramos: Ej. 60" id="peso" value="">
+                        </label>
+
+                        <label> <span>Altura:</span>
+                            <input type="number" placeholder="Ingrese su altura en centímetros: Ej. 160" id="altura" value="">
+                        </label>
+
+                        <label> <span>ICM:</span>
+                            <p id="icmR" class="resultados"></p>
+                        </label>
+
+
+                        <button id="calcular" type="submit" class="btn btn-default btn-lg btn-block" onclick="calcularImc()">Calcular </button>
+                        <button id="borra" type="submit" class="btn btn-default btn-lg btn-block" onclick="borra()">Borra datos </button>
+
+                        <div id="listaP" class="resultados"></div>
+                    </div><!--Content-->
+                </div><!--Container-->
+
+                <script src="../js/icm1.js"> </script>
+
+
+                            <br><br><br><br><div class="tituloPaginas" id="fcm">Calculadora de FCM.</div><br>
+
+            <div class="container">
+            <div class="content">
+                <label>
+                    <span>Edad:</span>
+                    <input type="number" placeholder="Ingrese su edad" id="edad" value="">
+                </label>
+
+                <span>Sexo</span><br>
+
+                <input type="radio" name="sexo" value="hombre" id="m" checked="checked"/> Hombre
+                <input type="radio" name="sexo" value="mujer"/> Mujer <br><br>
+
+                <label>
+                    <span>Frecuencia base:</span>
+                    <input type="number" placeholder="Ingrese su frecuencia" id="frecuenciaB" value="">
+                </label>
+
+
+                    <p id="resultadoFcm" class="resultados"></p>
+
+
+                    <p id="resultadoPorcentaje" class="resultados"></p>
+
+
+                <button type="submit" class="btn btn-default btn-lg btn-block" onclick="fcm()">Calcular</button>
+                <button id="borraFCM" type="submit" class="btn btn-default btn-lg btn-block" onclick="borraFCM()">Borra
+                    datos
+                </button>
+                <div>
+                    <p id="listaF" class="resultados"></p>
+                </div>
+
+            </div><!--Container-->
+                <script src="../js/fcm.js"></script>
+            </div>
+
+
+                            <br><br><br><br><div id="categoria" class="tituloPaginas">Categoría Atletismo</div><br>
+
+            <div class="container">
+            <div class="content">
+                <label>
+                    <span>Año de nacimiento:</span>
+                    <input type="number" placeholder="Ingresa tu año de nacimiento" id="año" value="">
+                </label>
+
+                <button type="button" class="btn btn-default btn-lg btn-block" ONCLICK="definirCategoria()">Aceptar</button> <br><br>
+                <p id="lista" class="resultados"></p>
+
+            </div>
+
+            <script src="../js/categoria.js"></script>
+
+
+                            <br><br><br><br><div class="tituloPaginas" id="horario">Horario Asociación</div><br>
+                <div class="container">
+                    <div class="contentHorario">
+            <button type="button" class="btn btn-default btn-lg btn-block" ONCLICK="horarioMatutino()">Horario Matutino</button><br>
+            <div id="horarioM"> </div> <br>
+
+            <button type="button" class="btn btn-default btn-lg btn-block" ONCLICK="horarioVespertino()">Horario Vespertino</button><br>
+            <div id="horarioV"> </div> <br>
+                    </div>
+                </div>
+
+            </div>
+            <script src="../js/horario.js">
+            </script>
+
+        </div> <!--Col md-8 -->
+        <br><br>
+        </div>
+
+    </div><!--Row-->
+</div><!--Contenedor Body-->
+
+
+<br><br><footer class="panel-footer">
+
+    <div><a href="https://www.facebook.com/Federaci%C3%B3n-Ecuatoriana-de-Atletismo-459143380787866/"><img class="menuFoto" src="../imagenes/iconoFacebook.png"/></a>
+        <a href="mailto:daw2jtomalatenelema@joanramis.org" title="e-mail"><img class="menuFoto" src="../imagenes/correo.png"/></a>
+    </div>
+    <br><strong>&copy; Copyright F.E.A.</strong><br>
+</footer>
+</body>
+</html>
+

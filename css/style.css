@@ -1,0 +1,214 @@
+header{
+    height: 200px;
+    border:hidden 0 #000000;}
+
+.headerFoto{ width:100%;
+}
+
+.TituloHeader {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+.tituloPaginaHome{
+     font-size:300%;
+     text-align: center;
+     color: rgba(0, 0, 0, 0.83);
+     text-shadow: #656565 0.1em 0.1em 0.2em;
+     font-weight: bold;
+ }
+
+.tituloPaginas{
+    font-size:200%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.83);
+    text-shadow: #656565 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.textBody{
+    font-size:180%;
+    text-align: center;
+    color: #2c2c36;
+    font-weight: bold;
+    padding-top: 80px; padding-bottom: 40px;padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+/********************** menu horizontal***********************************************************/
+/*************************************************************************************************/
+.contenedorMenu{
+    margin-right: 0px;
+    font-size:20px;
+}
+.navbar{background-color: rgba(245, 245, 245, 0.02);border-style: none;}
+
+a:hover{
+    opacity:0.5;
+}
+.menuFoto{
+    width: 30px;
+    height: 30px
+}
+/************************************************************************************************+/
+/*************************************************************************************************/
+
+
+.imagenPortada{
+    border-radius: 50px;/*borde curva del cuadro*/
+    width: 90%;/*ancho de la foto*/
+    padding: 5px;
+    border: 1px solid #CCC;/*borde de la foto*/
+
+}
+
+/*************************************************************************************************/
+/********************************formulario*****************************************************************/
+.btn{background-color: rgba(26, 30, 42, 0.35);}
+
+.contenedorFormulario{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 80px;
+    padding-right: 200px;
+
+}
+.scheduler-border{
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+    -webkit-box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.62);
+    box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.04); /*color del fondo de la caja*/
+    border: 1px solid #CCC;/*borde de la foto*/
+}
+
+/*************************************************************************************************/
+.contenedorBody{
+    text-align: justify;
+    font-size: large;
+}
+
+.panel-footer{
+    padding-top: 2em;
+    text-align: center;
+    background-color: rgba(255, 216, 0, 0.56);
+    width: 100%;
+}
+table{
+    background-color:white;
+    font-size: medium;
+}
+.tituloTablas{
+    font-size: large;
+
+}
+
+body {
+   /* background: url(../imagenes/portadaSport3.jpg) no-repeat center center fixed;*/
+    background-color: white;
+}
+
+
+
+/*/ Menu Vertical**********************************************************/
+
+.vertical-menu {
+    width: 250px;
+}
+
+.vertical-menu a {
+    background-color: rgba(255, 212, 1, 0.14);
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.vertical-menu a:hover {
+    background-color: rgba(225, 163, 0, 0.14);
+}
+
+/*.vertical-menu a.active {
+    //background-color: #4CAF50;
+    background-color: rgba(225, 163, 0, 0.14);
+    color: white;
+}*/
+
+/*icm**********************************************/
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+.container {
+    width: 100%;
+    margin:0%; /*queda sin ese margen raro*/
+}
+.content {
+    width: 290pt;
+    padding: 20px;
+    margin-left: 20pt;
+    display: block;
+    border-radius: 30px;/*borde curva del cuadro*/
+    border: 1px solid #CCC;/*borde de la foto*/
+}
+.contentHorario{
+    width: 290pt;
+    padding: 20px;
+    display: block;
+    margin-left: 20pt;
+
+}
+.botonFcm{
+    margin-left: 50px;
+    width: 40%;
+}
+label {
+    display: block;
+    margin-bottom: 30px;
+}
+
+label span {
+    margin-bottom: 15px;
+    display: block;
+}
+
+label input {
+    width: 90%;
+    padding: 10px;
+    font-size: small;
+}
+
+/******tabla***********/
+.table{
+    width: 80%;
+    background-color: rgba(46, 39, 255, 0.14);
+}
+body{
+    background-color: rgba(255, 212, 1, 0.14);
+}
+.row{
+    width: 100%;
+}
+.col-md-8{
+padding: 0%;
+    margin: 0%;
+}
+.col-xs-12{
+    padding: 0%;
+    margin: 0%;
+}
+.resultados{
+margin-left: 30pt;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
